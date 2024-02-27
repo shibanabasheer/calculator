@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+/* .calculator {
+  width: 280px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4,70px);
+  grid-gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons button { 
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 10px;
+} */
+
+.calculator {
+  width: 360px; /* Adjusted width to accommodate padding */
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center; /* Align content center */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-container {
+  margin-bottom: 20px; /* Add gap between input box and buttons */
 }
 
-.App-link {
-  color: #61dafb;
+input[type="text"] {
+  width: 100%; /* Take up full width of container */
+  padding: 10px;
+  font-size: 1.2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.buttons button { 
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+
+.output {
+  margin-top: 20px; /* Add gap between buttons and output */
+  font-size: 1.2em;
 }
